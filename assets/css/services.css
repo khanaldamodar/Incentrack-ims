@@ -1,0 +1,33 @@
+.services-container {
+    background-color: #1E201E;
+    color: white;
+    padding: 40px 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+.service-card {
+    background-color: #3C3D37;
+    border-radius: 10px;
+    padding: 20px;
+    width: 250px;
+    text-align: center;
+    transition: transform 0.3s ease;
+}
+.service-card:hover {
+    transform: translateY(-5px);
+}
+.service-card h3 {
+    color: rgb(247, 170, 70);
+    margin-bottom: 10px;
+}
+.service-card p {
+    font-size: 14px;
+}
+.coming-soon {
+    background-color: rgba(247, 170, 70, 0.2);
+}
+li a{
+    color: black;
+}

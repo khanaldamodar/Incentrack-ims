@@ -1,0 +1,131 @@
+
+.main-content {
+  padding: 20px;
+}
+
+.form-container {
+  background-color: #f9f9f9;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+  margin-bottom: 20px;
+  width: 50%;
+  margin-left: 25%;
+}
+.form-container h2 {
+  color: black;
+  text-align: center;
+  margin-bottom: 15px;
+}
+
+.supplier-form {
+  display: grid;
+  gap: 15px;
+  
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+}
+
+.form-group label {
+  margin-bottom: 5px;
+  font-weight: bold;
+  color: black;
+}
+
+.form-group input,
+.form-group textarea {
+  padding: 8px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  font-size: 14px;
+  color: black;
+}
+
+.submit-btn {
+  background-color: #4CAF50;
+  color: white;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s ease;
+}
+
+.submit-btn:hover {
+  background-color: #45a049;
+}
+
+.search-container {
+  display: flex;
+  margin-bottom: 20px;
+}
+
+#searchSupplier {
+    margin-top: 20px;
+  background-color: #f9f9f9;
+  flex-grow: 1;
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #ddd;
+  border-radius: 4px 0 0 4px;
+  color: black;
+}
+
+#searchBtn {
+    margin-top: 20px;
+  padding: 10px 15px;
+  background-color: #2196F3;
+  color: white;
+  border: none;
+  border-radius: 0 4px 4px 0;
+  cursor: pointer;
+}
+
+.supplier-table {
+  width: 100%;
+  border-collapse: collapse;
+  
+}
+
+.supplier-table th,
+.supplier-table td {
+    color: black;
+  border: 1px solid #ddd;
+  padding: 12px;
+  text-align: left;
+}
+
+.supplier-table th {
+  background-color: #f2f2f2;
+  font-weight: bold;
+}
+
+.supplier-table tr:nth-child(even) {
+  background-color: #f9f9f9;
+}
+
+.supplier-table tr:hover {
+  background-color: #f5f5f5;
+}
+
+.action-icons {
+  display: flex;
+  justify-content: space-around;
+}
+
+.action-icons i {
+  cursor: pointer;
+  font-size: 18px;
+}
+
+.fa-edit {
+  color: #2196F3;
+}
+
+.fa-trash-alt {
+  color: #f44336;
+}

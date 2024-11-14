@@ -1,0 +1,55 @@
+        body{
+            background-color: #1E201E;
+        }
+        .about-container {
+            max-width: 800px;
+            margin: 40px auto;
+            padding: 20px;
+            background-color: #f5f5f5;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+            
+        }
+
+        .about-container h2 {
+            color: #1E201E;
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        .about-section {
+            margin-bottom: 30px;
+        }
+
+        .about-section h3 {
+            color: rgb(247, 170, 70);
+            margin-bottom: 10px;
+        }
+
+        .about-section p, .about-section ul {
+            color: #333;
+            line-height: 1.6;
+        }
+
+        .about-section ul {
+            padding-left: 20px;
+        }
+
+        .about-section li {
+            margin-bottom: 5px;
+        }
+
+        li a{
+            color: black;
+        }
+        .about-list{
+            display: flex;
+            justify-content: center;
+            /* align-items: center; */
+            font-size: 13px;
+            list-style: circle;
+            gap: 2px;
+            flex-direction: column;
+        }
+
+        
