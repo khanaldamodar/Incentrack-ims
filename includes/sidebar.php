@@ -27,7 +27,7 @@
         <li><a href="#"><i class="fas fa-list"></i>Supplier List</a></li>
         <li><a href="stocks.php"><i class="fas fa-cubes"></i> Stocks</a></li>
         <li><a href="reports.php"><i class="fas fa-chart-bar"></i> Reports</a></li>
-        <li><a href="settings.php"><i class="fas fa-cog"></i> Settings</a></li>
+        <li><a href="profile.php"><i class="fas fa-cog"></i> Profile</a></li>
     </ul>
     </div>
 

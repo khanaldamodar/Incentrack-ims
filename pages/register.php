@@ -18,12 +18,6 @@ if($_SERVER['REQUEST_METHOD'] == "POST"){
         $password = $_POST['password'];
         $confirm_password = $_POST['confirm-password'];
 
-        
-       
-   
-
-
-        
         $sql = "INSERT INTO users (username, first_name, last_name, address,state, postal_code, phone_number, company_name, email , password_hash) VALUES ('$username', '$firstname','$lastname', '$address','$state', '$postal', '$phone', '$company_name', '$email','$password')";
 
         // $sql1 = "SELECT * FROM user_details";

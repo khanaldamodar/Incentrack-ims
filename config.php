@@ -3,7 +3,7 @@
 $servername = "localhost";
 $username = "root";
 $password = "";
-$dbname = "inventrack";
+$dbname = "inventorymanagement";
 
 // Create connection
 $conn = new mysqli($servername, $username, $password, $dbname);
