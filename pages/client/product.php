@@ -1,6 +1,7 @@
 
 <?php
 require "../../config.php";
+require "../../includes/login_validator.php";
 
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
     try {
@@ -105,23 +106,23 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
             <form id="productForm" class="product-form" method="POST">
                 <div class="form-group">
                     <label for="productId">Product ID:</label>
-                    <input type="text" id="productId" name="productId" required>
+                    <input style="color: black;" type="text" id="productId" name="productId" required>
                 </div>
                 <div class="form-group">
                     <label for="productName">Product Name:</label>
-                    <input type="text" id="productName" name="productName" required>
+                    <input style="color: black;" type="text" id="productName" name="productName" required>
                 </div>
                 <div class="form-group">
                     <label for="category">Category:</label>
-                    <input type="text" id="category" name="category" required>
+                    <input style="color: black;" type="text" id="category" name="category" required>
                 </div>
                 <div class="form-group">
                     <label for="quantity">Quantity:</label>
-                    <input type="number" id="quantity" name="quantity" required>
+                    <input style="color: black;" type="number" id="quantity" name="quantity" required>
                 </div>
                 <div class="form-group">
                     <label for="price">Price:</label>
-                    <input type="number" id="price" name="price" step="0.01" required>
+                    <input style="color: black;" type="number" id="price" name="price" step="0.01" required>
                 </div>
                 <button type="submit" class="submit-btn"> <i class="fas fa-plus"></i> Add Product</button>
             </form>
