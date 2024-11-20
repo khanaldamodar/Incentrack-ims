@@ -47,7 +47,7 @@ if ($_SERVER['REQUEST_METHOD'] == "POST") {
     $password = $_POST['password'];
 
     // Using a prepared statement to prevent SQL injection
-    $stmt = $conn->prepare("SELECT user_id, username, password_hash FROM users WHERE username = ?");
+    $stmt = $conn->prepare("SELECT username, password_hash FROM users WHERE username = ?");
     $stmt->bind_param("s", $username);
     $stmt->execute();
     $result = $stmt->get_result();

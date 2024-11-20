@@ -207,7 +207,6 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
                         echo "<td>" . htmlspecialchars($row['phone']) . "</td>";
                         echo "<td>" . htmlspecialchars($row['address']) . "</td>";
                         echo "<td>
-                                <button onclick='editSupplier(" . $row['supplier_id'] . ")' class='action-btn edit-btn'>Edit</button>
                                 <button onclick='deleteSupplier(" . $row['supplier_id'] . ")' class='action-btn delete-btn'>Delete</button>
                               </td>";
                         echo "</tr>";
@@ -218,14 +217,6 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         </div>
     </div>
     <script>
-        function editSupplier(id) {
-            // Get supplier details and populate form
-            // You would typically do this via AJAX
-            const form = document.querySelector('.supplier-form');
-            form.action.value = 'edit';
-            form.innerHTML += `<input type="hidden" name="supplier_id" value="${id}">`;
-        }
-
         function deleteSupplier(id) {
             if(confirm('Are you sure you want to delete this supplier?')) {
                 const form = document.createElement('form');

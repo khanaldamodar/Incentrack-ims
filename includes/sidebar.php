@@ -22,14 +22,13 @@
     <ul>
         <li><a href="dashboard.php"><i class="fas fa-tachometer-alt"></i> Dashboard</a></li>
         <li><a href="product.php"><i class="fas fa-add"></i>Add Product</a></li>
-        <li><a href="#"><i class="fas fa-list"></i>Product List</a></li>
         <li><a href="supplier.php"><i class="fas fa-truck"></i>Add Supplier</a></li>
-        <li><a href="#"><i class="fas fa-list"></i>Supplier List</a></li>
         <li><a href="stocks.php"><i class="fas fa-cubes"></i> Stocks</a></li>
         <li><a href="reports.php"><i class="fas fa-chart-bar"></i> Reports</a></li>
         <li><a href="profile.php"><i class="fas fa-cog"></i> Profile</a></li>
     </ul>
     </div>
+    
 
   </body>
 </html>

@@ -1,7 +1,7 @@
 <?php
 // session_start();
-require "../../config.php";
 require "../../includes/login_validator.php";
+require "../../config.php";
 
 ?>
 <!DOCTYPE html>
