@@ -10,10 +10,11 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
             $email = $_POST['email']; 
             $phone = $_POST['phone'];
             $address = $_POST['address'];
+            $created_by = $_SESSION['username'];
 
-            $sql = "INSERT INTO suppliers (supplier_name, email, phone, address) VALUES (?, ?, ?, ?)";
+            $sql = "INSERT INTO suppliers (supplier_name, email, phone, address, created_by) VALUES (?, ?, ?, ?, ?)";
             $stmt = $conn->prepare($sql);
-            $stmt->bind_param("ssss", $name, $email, $phone, $address);
+            $stmt->bind_param("sssss", $name, $email, $phone, $address, $created_by);
 
             if ($stmt->execute()) {
                 echo "<div class='message success'>Supplier added successfully!</div>";
@@ -197,7 +198,8 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
                 </thead>
                 <tbody>
                     <?php
-                    $sql = "SELECT * FROM suppliers";
+                    $created_by = $_SESSION['username'];
+                    $sql = "SELECT * FROM suppliers where created_by = '$created_by'";
                     $result = $conn->query($sql);
 
                     while($row = $result->fetch_assoc()) {

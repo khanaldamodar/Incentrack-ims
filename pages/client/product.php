@@ -10,10 +10,11 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         $category = $_POST['category'];
         $price = $_POST['price'];
         $stock = $_POST['stock'];
+        $created_by = $_SESSION['username'];
 
-        $sql = "INSERT INTO products (product_name, category, total_stock, product_price) VALUES (?, ?, ?, ?)";
+        $sql = "INSERT INTO products (product_name, category, total_stock, product_price, created_by) VALUES (?, ?, ?, ?, ?)";
         $stmt = $conn->prepare($sql);
-        $stmt->bind_param("ssdi", $name, $category, $stock, $price);
+        $stmt->bind_param("ssdis", $name, $category, $stock, $price, $created_by);
 
         if ($stmt->execute()) {
             echo "<script>alert('Product added successfully!');</script>";
@@ -41,8 +42,9 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 }
 
 // Fetch all products
+    $user = $_SESSION['username'];
 $products = [];
-$sql = "SELECT * FROM products";
+$sql = "SELECT product_id, product_name, category, product_price, total_stock FROM products where created_by = '$user'";
 $result = $conn->query($sql);
 if ($result->num_rows > 0) {
     while ($row = $result->fetch_assoc()) {
