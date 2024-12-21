@@ -483,6 +483,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
                 // Automatically submit the form when a new image is selected
                 document.getElementById('profile-form').submit();
                 document.getElementById('saveBtn').style.display = 'inline-block';
+                window.location.reload();
             }
         });
     </script>
