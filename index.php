@@ -72,7 +72,12 @@
       <p>
         Made with ❤️ by <span style="color: rgb(247, 170, 70)">InvenTrack</span>
       </p>
+      <ul style="display: flex; flex-direction: row; gap: 20px; color: white; justify-content: center; align-items: center; margin-top: 20px;">
+        <li><a style="text-decoration: none; color: white; background-color: #2a2d38; padding: 7px; border-radius: 4px; transition: 0.3s ease-in;" href="./pages/user/register.php">Become a client</a></li>
+        <li><a style="text-decoration: none; color: white; background-color: #2a2d38; padding: 7px; border-radius: 4px; transition: 0.3s ease-in;" href="./pages/admin/index.php">Login as Admin</a></li>
+      </ul>
     </div>
+
     <!-- End of Footer -->
   </body>
 </html>
